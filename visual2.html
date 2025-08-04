@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Works | ビジュアルアート・ロゴデザイン</title>
+  <link rel="icon" sizes="500x500" href="images/favicon.ico" id="favicon">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon-180x180.png">
+  <meta name="description" content="ポートフォリオのWebサイトです。">
+  <meta name="keywords" content="ポートフォリオ,PORTFOLIO,Portfolio,portfolio">
+  <link rel="stylesheet" href="style.css" />
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Italiana&family=Kaisei+Decol&family=M+PLUS+Rounded+1c&family=Niconne&family=Noto+Serif+JP:wght@200..900&family=Train+One&display=swap" rel="stylesheet"></head>
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html"><img src="images/logo.png" alt="Site Logo" class="site-logo" /></a>
+
+      <!-- ハンバーガー -->
+      <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+        <span class="line line1"></span>
+        <span class="line line2"></span>
+        <span class="line line3"></span>
+      </div>
+
+      <!-- メニュー本体 -->
+      <nav class="nav-menu" id="navMenu">
+          <a href="index.html#about">About me</a>
+          <a href="index.html#experience">My Experience</a>
+          <a href="myworks.html">My Works</a>
+          <a href="#contact">Contact</a>
+        </nav>
+    </div>
+  </header>
+
+  <section class="myworks">
+    <p><a href="myworks.html">My Works</a> | <a href="webdesign.html">Web Design</a> | <a href="#" class="highlight">Visual Art & Logo Design</a></p>
+    <h2>Visual Art & Logo Design<span>ビジュアルアート・ロゴデザイン</span></h2>
+    <div class="filter-buttons">
+      <a href="#logo"><button class="filter-btn" data-filter="Logo Design">Logo Design</button></a>
+      <a href="#illustration"><button class="filter-btn" data-filter="Illustration">Illustration</button></a>
+    </div>
+  </section>
+
+<!-- Logo design section -->
+<section id="logo" class="design fade-in" style="background-color: #fdfeff;">
+  <h1><span>LOGO</span> DESIGN <p>ロゴ</p></h1>
+  <div class="design-container">
+    <div class="design-img">
+      <img src="images/eG_logo.jpg" alt="Logo design1" onclick="openModal(this, 'modal-logo1')">
+    </div>
+
+    <!-- モーダル1 -->
+    <div id="modal-logo1" class="modal" onclick="closeModal()">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modal-img-logo1">
+    </div>
+
+    <div class="design-info">
+      <h3>eleGREENS – Enjoy Gardening</h3>
+      <p class="description">
+      <span>ブランド概要</span>：<strong>eleGREENS</strong>は、ガーデニングを楽しむ人々に向けて、植物との暮らしをより豊かにするためのグッズ・アイデア・情報を届ける架空ブランドです。<br><br>
+      <span>デザインの特徴</span>：<br>
+      <strong>• タイポグラフィ×芽吹きモチーフ</strong>：「e」「G」を象った有機的なロゴに、芽が出るデザインを組み合わせることで、自然の成長と生命感を表現。ゾウ（elephant)の形にしたジョウロをイメージし、グリッドシステムを使用して作成しました。<br><br>
+      <strong>• カラー設計</strong>：落ち着きと土の温もりを感じさせる赤茶と、植物のイメージを想起させるグリーンで構成。ナチュラルで安心感のあるブランドトーンを演出。<br><br>
+      <strong>• モックアップ展開</strong>：エプロン、看板など、園芸にまつわる日常生活シーンに自然と溶け込むように展開。
+    </p>
+      <p class="tools">使用ツール：Adobe Illustrator / Figma / Canva(Mockup)</p>
+      <button class="pdfBtn">詳細を表示</button>
+        <div class="pdfContainer" style="display: none; margin-top: 20px;">
+          <embed src="pdf/eG_logo.pdf" width="100%" height="600px" />
+        </div>
+    </div>
+  </div>
+
+  <!-- 2つ目の作品 -->
+  <div class="design-container">
+      <div class="design-info">
+        <h3>JAYIT – Japan Information Tips for You</h3>
+        <p class="description">
+          <span>ブランド概要</span>：<strong>JAYIT</strong>は、日本で生活するミャンマー人向けに、生活ルールや文化、制度に関する情報をSNSやWebで発信する架空のブランドです。<br><br>
+          <span>デザインの特徴</span>：<br>
+          	<strong>•	タイポグラフィ×桜モチーフ</strong>：「J」「A」「Y」「I」「T」の文字を組み合わせ、Yの上に桜の花を添えることで、日本文化の象徴を表現。<br><br>
+          	<strong>•	カラー設計</strong>：信頼感を与えるブルーと、親しみやすさを感じさせるレッドを基調に配色。文化の架け橋となるブランドとして、安心感と温かみの両立を目指しました。<br><br>
+          	<strong>•	モックアップ展開</strong>：トートバッグ、看板など、複数のシーンでの展開を想定し、ブランドとしての視覚的一貫性を確保。</p>
+        <p class="tools">使用ツール：Adobe Illustrator / Figma / Canva(Mockup)</p>
+        <button class="pdfBtn">詳細を表示</button>
+          <div class="pdfContainer" style="display: none; margin-top: 20px;">
+            <embed src="pdf/jy_logo.pdf" width="100%" height="600px" />
+          </div>
+      </div>
+
+      <div class="design-img">
+        <img src="images/jy_logo.jpg" alt="Logo design2" onclick="openModal(this, 'modal-logo2')">
+      </div>
+      <!-- モーダル2 -->
+      <div id="modal-logo2" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img-logo2">
+      </div>
+</div>
+</section>
+
+<!-- Illustration section -->
+<section id="illustration" class="design fade-in" style="background-color: #f9f9f9;">
+  <h1><span>ILLUST</span>RATION　<p>イラスト</p></h1>
+  <div class="design-container">
+    <div class="design-img">
+      <img src="images/fs.jpg" alt="Illustration1" onclick="openModal(this, 'modal-illustration1')">
+    </div>
+
+    <!-- モーダル1 -->
+    <div id="modal-illustration1" class="modal" onclick="closeModal()">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modal-img-illustration1">
+    </div>
+
+    <div class="design-info">
+      <h3>Flowers Shop（お花屋）</h3>
+      <p class="description">
+        <span>制作概要：</span>
+        「花屋」をテーマに、親しみやすく柔らかい印象のフラットアイコン風イラストを制作しました。線画、塗り、線＋塗りの3パターンを描き分けることで、配色とシルエットのバランスを検証しました。<br><br>
+        <span>コンセプト：</span>
+          街中にある小さな花屋をイメージし、見る人に温かみと安心感を与えるデザインを意識しました。ピンクや赤を中心とした優しいカラーで構成し、ファサードや花の配置に遊び心を取り入れています。<br><br>
+        <span>制作ポイント：</span><br>
+          <strong>•</strong>	線画のみ、塗りのみ、線＋塗りの3種のスタイルを制作。<br>
+          <strong>•</strong>	ハートや花などのモチーフで、可愛らしさを演出。<br>
+          <strong>•</strong>	屋根のシェードや木のフェンスなど、細部まで丁寧にデザイン。<br>
+          <strong>•</strong>	色相・彩度・明度の調整により、全体の配色バランスを最適化。</p>
+      <p class="tools">使用ツール：Adobe Illustrator</p>
+      <button class="pdfBtn">詳細を表示</button>
+        <div class="pdfContainer" style="display: none; margin-top: 20px;">
+          <embed src="pdf/flower_shop.pdf" width="100%" height="600px" />
+        </div>
+    </div>
+  </div>
+
+  <!-- 2つ目の作品 -->
+  <div class="design-container">
+      <div class="design-info">
+        <h3>Vending Machine(自販機)</h3>
+        <p class="description">
+          <span>制作概要：</span>
+          実際に自宅の前に設置されている自動販売機をモチーフにして描いたフラット・アイコンのイラストです。色彩理論（Color Theory）と光と影の表現（Light & Shadow）を練習する目的で制作しました。<br><br>
+          <span>コンセプト：</span>
+            日常にある何気ない風景の一部である自動販売機に着目し、リアルな質感や存在感を丁寧に描き出すことを意識しました。身近なものを丁寧に観察し、光の当たり方や影の落ち方を表現することで、生活感と温かみのある雰囲気を目指しています。<br><br>
+          <span>制作ポイント：</span><br>
+            <strong>•</strong>	実物をよく観察し、細部まで正確に描写。<br>
+          	<strong>•</strong>	色彩理論を活かし、自然な色合いで落ち着いた印象を演出。<br>
+          	<strong>•</strong>	光源を想定し、光と影のバランスにこだわることで立体感を強調。</p>
+        <p class="tools">使用ツール：Adobe Illustrator</p>
+      </div>
+
+      <div class="design-img">
+        <img src="images/vm.jpg" alt="Illustration2" onclick="openModal(this, 'modal-illustration2')">
+      </div>
+      <!-- モーダル2 -->
+      <div id="modal-illustration2" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img-illustration2">
+      </div>
+</div>
+</section>
+
+<!-- Contact Section -->
+<a name = "contact"></a>
+<section id="contact" class="contact fade-in">
+  <h2>Contact<span>お問い合わせ</span></h2>
+    <form action="https://formspree.io/f/meokbpnj" method="POST">
+    <input type="text" name="name" placeholder="お名前" required style="margin-top: 20px;">
+    <input type="email" name="email" placeholder="メールアドレス" required style="margin-top: 20px;">
+    <textarea name="message" placeholder="メッセージ" rows="5" style="margin-top: 20px;"></textarea>
+    <button type="submit">送信</button>
+    </form>
+</section>
+
+<!-- Sidebar Social Icons -->
+<div class="social-sidebar">
+  <ul>
+<li>
+  <a href="https://facebook.com/yourusername" target="_blank" aria-label="Facebook">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+</li>
+<li>
+  <a href="https://instagram.com/yourusername" target="_blank" aria-label="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+</li>
+<li>
+  <a href="https://twitter.com/yourusername" target="_blank" aria-label="Twitter">
+    <i class="fab fa-x-twitter"></i>
+  </a>
+</li>
+</ul>
+</div>
+
+<!-- Resume Section -->
+<section id="resume" class="resume fade-in" style="display: none;">
+
+<button id="resumeBtn">レジュメ（表示）</button>
+<div id="pdfContainer1" style="display: none; margin-top: 20px;">
+<!-- <div id="pdfContainer1" style="display: none; margin-top: 20px;"> -->
+  <iframe
+    src="https://designstudiobys.wordpress.com/wp-content/uploads/2025/07/240422e5b1a5e6adb4e69bb8_e38386e382a3e383b3e382b6e383bce38394e383a7e383bc.pdf" download
+    width="100%"
+    height="600px"
+    style="border: 1px solid #64ffda; border-radius: 6px;"
+  ></iframe>
+</div>
+
+<button id="careerBtn">職務経歴書（表示）</button>
+<div id="pdfContainer2" style="display: none; margin-top: 20px;">
+  <iframe
+    src="https://designstudiobys.wordpress.com/wp-content/uploads/2025/07/240422e5b1a5e6adb4e69bb8_e38386e382a3e383b3e382b6e383bce38394e383a7e383bc.pdf" download
+    width="100%"
+    height="600px"
+    style="border: 1px solid #64ffda; border-radius: 6px;"
+  ></iframe>
+</div>
+</section>
+
+  <footer>
+    <p>© 2025 Thinzar’s Portfolio. All rights reserved.</p>
+    <!-- トップに戻るボタン -->
+    <div class="arrow-up" aria-label="トップへ戻る"><a href="#" alt="トップへ戻る">
+      ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
